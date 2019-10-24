@@ -43,7 +43,7 @@ export default {
   },
   computed: {
     isValid: function() {
-      const result = this.userId.length < 3;
+      const result = this.userId.length < 1;
       return result ? result : this.loading;
     },
     ...mapState(["loading", "error"]),
