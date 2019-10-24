@@ -13,7 +13,7 @@ let activeRoom = null
 async function connectUser(userId) {
   const chatManager = new ChatManager({
     instanceLocator: INSTANCE_LOCATOR,
-    tokenProvider: new TokenProvider({ url: TOKEN_URL }),
+    tokenProvider: new TokenProvider({ url: 'TOKEN_URL' }),
     userId
   })
   currentUser = await chatManager.connect()
